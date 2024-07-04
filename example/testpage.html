@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Error Demo</title>
+</head>
+<body>
+    <h1>Click the button to cause a JS error</h1>
+    <button onclick="causeError()">Click me</button>
+
+    <script>
+        function causeError() {
+            // This will cause a ReferenceError because nonExistentFunction is not defined
+            nonExistentFunction();
+        }
+    </script>
+</body>
+</html>
+
